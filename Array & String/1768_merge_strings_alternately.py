@@ -1,7 +1,6 @@
-class Solution(object):
-    def kidsWithCandies(self, candies, extraCandies):
-        maxCandies = max(candies)
-        result = []
-        for candy in candies:
-            result.append(candy + extraCandies >= maxCandies)
-        return result
+class Solution:
+    def mergeAlternately(self, word1: str, word2: str) -> str:
+        res = ""
+        for a, b in zip(word1, word2):
+            res += a + b
+        return res + word1[len(word2):] + word2[len(word1):]
