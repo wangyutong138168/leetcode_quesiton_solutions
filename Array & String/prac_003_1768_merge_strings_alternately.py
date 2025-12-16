@@ -1,0 +1,9 @@
+class Solution:
+    def mergeAlternate(self, word1: str, word2: str) -> str:
+        res = ""
+        for a, b in zip(word1, word2):
+            res += a + b
+        return res + word1[len(word2):] + word2[len(word1):]
+
+s = Solution()
+print(s.mergeAlternate("bubble", "gum"))
