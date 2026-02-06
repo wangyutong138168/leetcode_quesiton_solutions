@@ -1,4 +1,10 @@
 public String backAround(String str) {
-  String last = str.substring(str.length()-1);
-  return last + str+ last;
+  
+  int lastPos = str.length() - 1; 
+  
+
+  String lastLetter = str.substring(lastPos); 
+  
+
+  return lastLetter + str + lastLetter;
 }
