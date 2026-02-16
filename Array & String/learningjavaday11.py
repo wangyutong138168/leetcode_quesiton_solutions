@@ -1,0 +1,14 @@
+public int totalGridSum(int[][] grid) {
+  int total = 0;
+
+  for (int row = 0; row < grid.length; row++) {
+    
+ 
+    for (int col = 0; col < grid[row].length; col++) {
+
+      total += grid[row][col];
+    }
+  }
+  
+  return total;
+}
