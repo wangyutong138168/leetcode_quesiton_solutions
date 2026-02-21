@@ -1,11 +1,11 @@
-public class GoldAsset {
-    private double price;
+public class TradeSystem {
+    private boolean active; 
 
-    public double getPrice() { 
-        return price; 
+    public boolean isActive() { 
+        return active
     }
 
-    public void setPrice(double p) { 
-        if (p > 0) this.price = p;
+    public void setActive(boolean s) {
+        this.active = s; 
     }
 }
