@@ -1,4 +1,5 @@
-Animal a = new Shark();      
-a.eat();                     
-// a.swim();                 
-((Shark)a).swim();           
+Animal a = new Bird();
+a.eat();
+if (a instanceof Bird) {
+    ((Bird)a).fly();
+}
